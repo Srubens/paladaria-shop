@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="<?php language_attributes(); ?>">
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="<?php bloginfo('description'); ?>">
+    <title><?php bloginfo('name'); ?></title>
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?> >
+
+    <nav class="bg_nav navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="logo"> <a class="navbar-brand" href="#"><img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.png" alt="logo"></a> </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="col-4 d-flex justify-content-end">
+                    <div class="social ">
+                        SOCIAL
+                    </div>
+                    <div>
+                        CAARRINHO
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="bg-marron"></div>   
+
+    <div class="main">
+
+        <div class="header-box-top">
+            <div class="container">
+                <div class="d-flex">
+                    <header>
+                        <h1>Sabor em <br>
+                            Cada pedaço.
+                        </h1>
+                        <a href="#" class="btn btn_orange">Nossos produtos</a>
+                    </header>
+                </div>
+            </div>
+        </div><!-- end header-box-top   -->
+
+        <div class="history">
+            <div class="container">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="history-box-image">
+                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/img-01.png" alt="img-01">
+                    </div>
+                    <div class="history-text">
+                        <h1>História da Ba Bakery</h1>
+                        <div class="bg-line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus assumenda sapiente culpa expedita iure nostrum ut molestias iste voluptatibus, magni, 
+                        quibusdam veniam, alias facere exercitationem doloribus rem vero illum dolorem.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minus assumenda sapiente culpa expedita iure nostrum ut molestias iste voluptatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text_products">
+                <div class="d-flex flex-column">
+                    <h1>Produtos</h1>
+                    <div class="bg-line"></div>
+                </div>
+            </div>
+        </div> 
+        <!-- end container  -->
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="products">
+            <div class="container m-auto">
+                <div class="row d-flex justify-content-between">
+                
+                    <div class="col-4">
+                        <div class="box-white">
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/comida-01.png" alt="comida-01">
+                            <header class="box-white-header">
+                                <h5>Macarons Diversos 90g</h5>
+                                <p>R$ 9,00</p>
+                            </header>  
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="box-white">
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/comida-02.png" alt="comida-01">
+                            <header class="box-white-header">
+                                <h5>Macarons Diversos 90g</h5>
+                                <p>R$ 9,00</p>
+                            </header>  
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="box-white">
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/comida-03.png" alt="comida-01">
+                            <header class="box-white-header">
+                                <h5>Macarons Diversos 90g</h5>
+                                <p>R$ 9,00</p>
+                            </header>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <a href="#" class="btn btn_orange btn_more">veja mais</a>
+                </div>
+
+            </div>
+        </div><!-- end products  -->
+
+        <div class="contact">
+            <div class="container">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="box_form">
+                        
+                        <div class="mb-5">
+                            <h1>Se interessou pelos nossos serviços? Manda uma mensagem pra gente. :)</h1>
+                        </div>
+
+                        <form class="form_contact" method="POST">
+                            <div class="d-flex flex-row mb-3">
+                                <label>
+                                nome 
+                                </label>
+                                <input class="form-control" type="text" placeholder="Ex: josé">
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <label >
+                                telefone 
+                                </label>
+                                <input class="form-control" type="text" placeholder="Ex: (XX)X.XXXX-XXXX">
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <label >
+                                email 
+                                </label>
+                                <input class="form-control" type="email" placeholder="Ex: exemplo@exemplo.com.br">
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <label>Mensagem</label>
+                                <textarea name="" id="" placeholder="deixe aqui sua mensagem" class="form-control" ></textarea>
+                            </div>
+                            
+                            <button ttype="button" class="btn btn_orange" >enviar</buutton>
+
+                        </form>
+                    
+                    </div>
+
+                    <div>
+                        <div class="bg_image">
+                            <h1>Você também pode nos fazer uma visita.</h1>
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/local.png" alt="local">
+                            <div class="d-flex">
+                                <span class="bg_locale"></span> <p>R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Graças, Recife - PE.</p>
+                            </div>
+                            <a href="#" class="btn btn_white_outline">Traçar Rota</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- end contact  -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="d-flex justify-content-evenly">
+                    <div>
+                       <img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-dark.png" alt="logo-dark">
+                    </div>
+                    <div class="footer_contact">
+                        <i class="fas fa-phone-alt"></i> +55 (87) 3312.4057 <br> <i class="fas fa-envelope"></i> 
+                         contato@babakery.com.br <span class="bg_line_dark"></span> <br> <i class="fas fa-map-marker-alt"></i> R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Graças, Recife - PE.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <p> Ba Bakery - Copyright <?= date('Y'); ?> &copy; Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end main  -->
+
+<?php wp_footer(); ?>
+</body>
+</html>
